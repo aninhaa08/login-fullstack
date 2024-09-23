@@ -1,0 +1,78 @@
+.background-popup {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.users {
+    padding: 1rem;
+    overflow: hidden;
+
+    background: #F4F4F4;
+    border: 1px solid #AFA2C3;
+    border-radius: 8px;
+
+
+    width: 43rem;
+    height: 35rem;
+
+    display: block;
+
+    .button-box {
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .button-popup {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .user {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: min-content;
+        gap: 1rem;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        max-height: 90%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .user-tag {
+        flex-direction: row;
+        align-items: flex-start;
+    
+        width: 20rem;
+        height: 6rem;
+        padding: 1rem;
+    
+        background: linear-gradient(-90deg, rgb(251, 101, 100, 0.6), rgb(160, 60, 234, 0.6));
+        color: #FFFFFF;
+        border-radius: 8px;
+
+        .data {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .delete-user {
+            border: none;
+            background: none;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+
+
+}
+
